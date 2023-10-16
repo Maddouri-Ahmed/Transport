@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@ajouttransport.css" />
+         </stylesheets>
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="gradient" stylesheets="@transport.css">
+               <children>
+                  <Label layoutX="45.0" layoutY="27.0" text="Ajout de Transport" textFill="#a818a8">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="su_valide1" layoutX="104.0" layoutY="314.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" styleClass="type-btn" stylesheets="@transport.css" text="valider" />
+                  <TextField fx:id="su_cap1" layoutX="120.0" layoutY="97.0" prefHeight="28.0" prefWidth="149.0" promptText="capacité du moyen" styleClass="textfield" stylesheets="@transport.css" />
+                  <ComboBox fx:id="su_type1" layoutX="120.0" layoutY="144.0" prefWidth="150.0" promptText="Type du moyen" styleClass="box" stylesheets="@transport.css" />
+                  <Label layoutX="26.0" layoutY="102.0" prefHeight="17.0" prefWidth="61.0" text="Capacité :" />
+                  <Label layoutX="25.0" layoutY="150.0" text="Type :" />
+                  <TextField fx:id="du_dd1" layoutX="120.0" layoutY="200.0" prefHeight="28.0" prefWidth="149.0" promptText="Date de départ" styleClass="textfield" stylesheets="@transport.css" />
+                  <Label layoutX="17.0" layoutY="205.0" text="Date de départ" />
+                  <Label layoutX="17.0" layoutY="254.0" text="Date de départ" />
+                  <TextField fx:id="su_da1" layoutX="120.0" layoutY="249.0" prefHeight="28.0" prefWidth="149.0" promptText="Date de départ" styleClass="textfield" stylesheets="@transport.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="316.0" styleClass="gradient" stylesheets="@transport.css">
+               <children>
+                  <Hyperlink fx:id="su_ret11" layoutX="213.0" layoutY="345.0" text="Retour">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <TreeTableView layoutX="-1.0" layoutY="100.0" prefHeight="200.0" prefWidth="317.0">
+                     <columns>
+                        <TreeTableColumn prefWidth="36.0" text="Id" />
+                        <TreeTableColumn prefWidth="56.0" text="Capacité" />
+                        <TreeTableColumn prefWidth="50.6666259765625" text="Type" />
+                        <TreeTableColumn minWidth="0.0" prefWidth="89.33340454101562" text="Date de départ" />
+                        <TreeTableColumn minWidth="8.666748046875" prefWidth="84.6666259765625" text="Date d'arrivée" />
+                     </columns>
+                  </TreeTableView>
+                  <Button fx:id="su_valide11" layoutX="213.0" layoutY="38.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="80.0" styleClass="search" stylesheets="@transport.css" text="Chercher" />
+                  <TextField fx:id="su_id11" layoutX="46.0" layoutY="38.0" prefHeight="28.0" prefWidth="149.0" promptText="moyen Id" styleClass="textfield" stylesheets="@transport.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
